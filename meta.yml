@@ -1,0 +1,30 @@
+name: Among Us [Web Challenge]
+
+docker_image: localhost:56156/AmongUs
+
+description: |
+  author: [Anvitha Ramachandran](https://github.com/anvitha305)
+
+  Example Instruction:
+    This is written to teach you about WordPress exploits so you can hack the Among Us "Control Panel".  
+    Note that you must use this CTF challenge in a VM and not on your host machine as you may want to use tools like Metasploitable for it.
+  Step 1:
+    Forward the traffic back from the remote server
+  Step 2:
+    Access the website on local port and see whether you can capture the flag by using tools from class.
+  Step 3:
+    Submit the Flag.
+
+# Value should be in range of 100-300
+value: 150
+# Available categories are: 
+category: Miscellaneous
+# Your custom Flag
+flag: CTF_SDaT{4m0nGu5-h4ck3d}
+
+hints:
+  - {
+    content: "Try using Metasploitable to perform an exploit on this VM",
+    cost: 20
+  }
+

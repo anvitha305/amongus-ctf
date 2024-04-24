@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+  among_us:
+    image: localhost:56156/AmongUs
+    build:
+      context: ../../../ # do not change
+      dockerfile: Challenges/Miscellaneous/AmongUs/Dockerfile
+    networks:
+      nw0:
+    deploy:
+      resources:
+        limits:
+          memory: 200m
+          cpus: '0.1'
+    env_file:
+      - .env
+networks:
+  nw0:
+    external: true
+
