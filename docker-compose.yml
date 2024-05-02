@@ -2,10 +2,10 @@ version: '3'
 
 services:
   among_us:
-    image: localhost:56156/AmongUs
+    image: localhost:56156/amongus
     build:
       context: ../../../ # do not change
-      dockerfile: Challenges/Miscellaneous/AmongUs/Dockerfile
+      dockerfile: Dockerfile
     networks:
       nw0:
     deploy:
